@@ -38,13 +38,13 @@ void ofxUeyeThreaded::initBase() {
 	camera.capture();
 	this->allocate();
 
-	this->startThread(true, false);
+	this->startThread();
 }
 
 void ofxUeyeThreaded::close() {
 	if (this->camera.isOpen()) {
 		if (this->isThreadRunning())
-			stopThread(false);
+			stopThread();
 		this->camera.close();
 	}
 }

@@ -31,7 +31,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="C:\Program Files\IDS\uEye\Develop\Lib\uEye_api.lib">
+    <Library Include="C:\Program Files\IDS\uEye\Develop\Lib\uEye_api_64.lib">
       <Filter>lib</Filter>
     </Library>
   </ItemGroup>

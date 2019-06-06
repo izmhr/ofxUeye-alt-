@@ -11,6 +11,7 @@
 #include "ofAppRunner.h"
 
 #include "uEye.h"
+#include "uEye_deprecated.h"
 
 #include <string>
 #include <algorithm>
@@ -58,7 +59,7 @@ public:
 	virtual void apply(ofxUeye& camera) const = 0;
 };
 
-class ofxUeye : public ofBaseVideoDraws {
+class ofxUeye {
 public:
 	ofxUeye();
 	~ofxUeye();

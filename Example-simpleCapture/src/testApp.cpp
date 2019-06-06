@@ -27,13 +27,13 @@ void testApp::setup(){
 	//
 
 	//a. print out the list of cameras
-	//ofxUeye::listDevices();
+	vector<ofxUeyeDevice> deviceList = ofxUeye::listDevices();
 
 	//b. get the list of cameras;
-	//vector<ofxUeyeDevice> deviceList = ofxUeye::getDevices(); 
+	//vector<ofxUeyeDevice> deviceList = ofxUeye::getDeviceList(); 
 
 	//c. print out the camera details, and get a count of the cameras
-	int cameraCount = ofxUeye::listDevices().size();
+	int cameraCount = deviceList.size();
 
 	//d. print out the camera details, and get a list of the cameras
 	//vector<ofxUeyeDevice> deviceList2 = ofxUeye::listDevices();
@@ -42,7 +42,7 @@ void testApp::setup(){
 	////
 
 
-	if (cameraCount==0) {
+	if (cameraCount == 0) {
 		ofLogError() << "No cameras detected!";
 		return;
 	}
@@ -54,10 +54,10 @@ void testApp::setup(){
 	//
 
 	//a. use first camera
-	camera.init();
+	//camera.init();
 
 	//b. use specfic camera ID. uEye ID's start at 1
-	//camera.init(1);
+	camera.init(1, true);
 
 	//c. use a specific device from the camera list
 	//camera.init(deviceList[0]);

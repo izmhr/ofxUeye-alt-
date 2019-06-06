@@ -1,69 +1,91 @@
-#OS junk files
-[Tt]humbs.db
+#.gitignore is a file which makes git ignore files which should
+# not go into version control in the first place
+# Questions? See
+# http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Ignoring-Files
+# http://git-scm.com/docs/gitignore
 
-#XCode files
-build/
-bin/
-obj/
-xcuserdata/
-*.depend
-*.layout
-*.mode*v3
-*.pbxuser
-*.app*
-*.DS_*
-*.perspectivev3
-*.xcworkspace
+###########################
+# ignore generated binaries
+# but not the data folder
+###########################
 
-#Visual Studio files
-*.[Oo]bj
-*.user
-*.aps
-*.pch
-*.vspscc
-*.vssscc
-*_i.c
-*_p.c
-*.ncb
-*.suo
-*.tlb
-*.tlh
-*.bak
-*.[Cc]ache
-*.ilk
-*.log
-*.lib
-*.sbr
-*.sdf
-*.opensdf
-ipch/
-obj/
-[Bb]in
-[Bb]uild
+*/bin/*
+!/bin/data/
+
+#########
+# general
+#########
+
+[Bb]uild/
+[Oo]bj/
+*.o
 [Dd]ebug*/
 [Rr]elease*/
-Ankh.NoLoad
+*.mode*
+*.app/
+*.pyc
+.svn/
+*.log
 
-#Tooling
-_ReSharper*/
-*.resharper
-[Tt]est[Rr]esult*
+########################
+# IDE files which should
+# be ignored
+########################
 
-#Archives
-*.zip
-*.7z
+# XCode
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+# XCode 4
+*.xccheckout
+xcuserdata/
 
-#Subversion files
-.svn
+# Visual Studio
+*.vs/
+*.user
+*.sdf
+*.opensdf
+*.suo
+*.pdb
+*.ilk
+*.aps
+ipch/
 
-# Office Temp Files
-~$*
+# Eclipse
+.metadata
+local.properties
+.externalToolBuilders
 
-# VVVV bcp
-*~.xml
+# Android Studio
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
 
-#dll's
-*.dll
+##################
+# operating system
+##################
 
-#media files
-*.avi
+# Linux
+*~
+# KDE
+.directory
+.AppleDouble
+
+# OSX
+.DS_Store
+*.swp
+*~.nib
+# Thumbnails
+._*
+
+# Windows
+# Image file caches
+Thumbs.db
+# Folder config file
+Desktop.ini
+
+# Android
+.csettings

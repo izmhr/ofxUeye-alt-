@@ -2,7 +2,7 @@
 #include "ofxUeye.h"
 #include "ofThread.h"
 
-class ofxUeyeThreaded : public ofThread, public ofBaseUpdates, public ofBaseDraws, public ofBaseHasPixels, public ofBaseHasTexture {
+class ofxUeyeThreaded : public ofThread, public ofBaseUpdates, public ofBaseDraws {
 public:
 	ofxUeyeThreaded();
 	~ofxUeyeThreaded();
