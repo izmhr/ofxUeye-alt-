@@ -4,9 +4,6 @@
     <Filter Include="src">
       <UniqueIdentifier>{833de6c8-90b8-46aa-8730-2ac690789dcf}</UniqueIdentifier>
     </Filter>
-    <Filter Include="lib">
-      <UniqueIdentifier>{dea3831d-636a-47ad-a7a7-7a0e2ef1d2af}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\ofxUEye.cpp">
@@ -29,10 +26,5 @@
     <ClInclude Include="..\src\ofxUeyePreset_5480ChessBoard.h">
       <Filter>src</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="C:\Program Files\IDS\uEye\Develop\Lib\uEye_api_64.lib">
-      <Filter>lib</Filter>
-    </Library>
   </ItemGroup>
 </Project>
