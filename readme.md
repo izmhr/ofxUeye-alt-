@@ -3,11 +3,18 @@
 Capture frames from a uEye camera device
 
 # License
+
 MIT license (http://opensource.org/licenses/MIT)
 
 # Other ofxUeye
 
 Paulo Barcelos created a nifty ofxUeye at  https://github.com/paulobarcelos/ofxUeye/, I suggest checking there first.
+
+# To build
+
+* Clone this project into your `$(OF_ROOT)\addons`.
+* Install IDS SDK into default directory `C:\Program Files\IDS`.
+  * All `.h` files and `.lib` files you need must be correctly placed into the directories above.
 
 # Does not support
 
