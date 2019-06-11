@@ -28,11 +28,15 @@
     <ClInclude Include="..\src\ofxUeyePreset_5480SL.h" />
     <ClInclude Include="..\src\ofxUeyeThreaded.h" />
   </ItemGroup>
+  <PropertyGroup Condition="'$(WindowsTargetPlatformVersion)'==''">
+		<LatestTargetPlatformVersion>$([Microsoft.Build.Utilities.ToolLocationHelper]::GetLatestSDKTargetPlatformVersion('Windows', '10.0'))</LatestTargetPlatformVersion>
+		<WindowsTargetPlatformVersion Condition="'$(WindowsTargetPlatformVersion)' == ''">$(LatestTargetPlatformVersion)</WindowsTargetPlatformVersion>
+		<TargetPlatformVersion>$(WindowsTargetPlatformVersion)</TargetPlatformVersion>
+	</PropertyGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C48B2CCF-FA1D-405A-8362-B516399D7013}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>ofxUeyeLib</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
